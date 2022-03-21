@@ -1,5 +1,12 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
+Date: 20MAR2022
+  Changes:
+    - Unlock Automatic Discharge Defense recipe when the mod is added to a game where the research has already been learned
+    - update license to CC BY-NC-SA 4.0
+
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
 Date: 25OCT2021
   Changes:
     - initial release on mod portal
