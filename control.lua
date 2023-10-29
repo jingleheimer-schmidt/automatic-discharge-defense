@@ -1,4 +1,5 @@
-function check_techs()
+
+local function check_techs()
   for _, force in pairs(game.forces) do
     if force.technologies["discharge-defense-equipment"].researched then
       force.recipes["automatic-discharge-defense-equipment"].enabled = true
