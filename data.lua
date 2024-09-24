@@ -11,27 +11,27 @@ auto_discharge_defense_item.placed_as_equipment_result = "automatic-discharge-de
 auto_discharge_defense_item.order = auto_discharge_defense_item.order .. "-a[auto]"
 
 local auto_discharge_defense_recipe = {
-  type = "recipe",
-  name = "automatic-discharge-defense-equipment",
-  enabled = false,
-  energy_required = 10,
-  ingredients =
-  {
-    {"advanced-circuit", 2},
-    {"discharge-defense-equipment", 1},
-    {"discharge-defense-remote", 1}
-  },
-  result = "automatic-discharge-defense-equipment",
+    type = "recipe",
+    name = "automatic-discharge-defense-equipment",
+    enabled = false,
+    energy_required = 10,
+    ingredients =
+    {
+        { "advanced-circuit",            2 },
+        { "discharge-defense-equipment", 1 },
+        { "discharge-defense-remote",    1 }
+    },
+    result = "automatic-discharge-defense-equipment",
 }
 
 local tech_effect = {
-  type = "unlock-recipe",
-  recipe = "automatic-discharge-defense-equipment"
+    type = "unlock-recipe",
+    recipe = "automatic-discharge-defense-equipment"
 }
 table.insert(data.raw.technology["discharge-defense-equipment"].effects, tech_effect)
 
 data:extend({
-  auto_discharge_defense,
-  auto_discharge_defense_item,
-  auto_discharge_defense_recipe,
+    auto_discharge_defense,
+    auto_discharge_defense_item,
+    auto_discharge_defense_recipe,
 })
