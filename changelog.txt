@@ -3,6 +3,7 @@ Version: 0.0.4
 Date: 24SEP2024
   Changes:
     - updated license year
+    - updated mod description
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.3
 Date: 28OCT2023
