@@ -9,12 +9,12 @@ Date: 24SEP2024
 Version: 0.0.3
 Date: 28OCT2023
   Changes:
-    - update license year
+    - updated license year
   Locale:
-    - add German (de) locale from Crowdin
-    - add Polish (pl) locale from Crowdin
-    - add Russian (ru) locale from Crowdin
-    - add Ukrainian (uk) locale from Crowdin
+    - added German (de) locale from Crowdin
+    - added Polish (pl) locale from Crowdin
+    - added Russian (ru) locale from Crowdin
+    - added Ukrainian (uk) locale from Crowdin
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.2
 Date: 20MAR2022
