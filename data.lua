@@ -7,9 +7,10 @@ auto_discharge_defense.automatic = true
 
 local auto_discharge_defense_item = util.table.deepcopy(data.raw.item["discharge-defense-equipment"])
 auto_discharge_defense_item.name = "automatic-discharge-defense-equipment"
-auto_discharge_defense_item.placed_as_equipment_result = "automatic-discharge-defense-equipment"
+auto_discharge_defense_item.place_as_equipment_result = "automatic-discharge-defense-equipment"
 auto_discharge_defense_item.order = auto_discharge_defense_item.order .. "-a[auto]"
 
+---@type data.RecipePrototype
 local auto_discharge_defense_recipe = {
     type = "recipe",
     name = "automatic-discharge-defense-equipment",
@@ -17,11 +18,14 @@ local auto_discharge_defense_recipe = {
     energy_required = 10,
     ingredients =
     {
-        { "advanced-circuit",            2 },
-        { "discharge-defense-equipment", 1 },
-        { "discharge-defense-remote",    1 }
+        { type = "item", name = "advanced-circuit",            amount = 2 },
+        { type = "item", name = "discharge-defense-equipment", amount = 1 },
+        { type = "item", name = "discharge-defense-remote",    amount = 1 }
     },
-    result = "automatic-discharge-defense-equipment",
+    results =
+    {
+        { type = "item", name = "automatic-discharge-defense-equipment", amount = 1 }
+    },
 }
 
 local tech_effect = {
