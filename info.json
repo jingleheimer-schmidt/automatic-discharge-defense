@@ -1,11 +1,11 @@
 {
   "name": "automatic-discharge-defense",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "title": "Automatic Discharge Defense",
   "author": "asher_sky",
   "contact": "",
   "homepage": "",
   "description": "Upgrade your Discharge Defense equipment with an Automatic Activation System",
-  "factorio_version": "1.1",
+  "factorio_version": "2.0",
   "dependencies": ["base"]
 }

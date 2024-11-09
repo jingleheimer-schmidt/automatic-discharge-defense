@@ -2,3 +2,4 @@
 .DS_Store
 locale/.DS_Store
 .vscode/settings.json
+.vscode/launch.json
