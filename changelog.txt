@@ -5,6 +5,7 @@ Date: ????
     - replaced the remote with a raw fish in the recipe
     - automatic discharge defense can be unlocked by any technology that unlocks discharge defense
     - updated the equipment sprite
+    - updated mod thumbnail
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.5
 Date: 07NOV2024
