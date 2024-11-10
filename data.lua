@@ -4,6 +4,7 @@ require("util")
 local auto_discharge_defense = util.table.deepcopy(data.raw["active-defense-equipment"]["discharge-defense-equipment"])
 auto_discharge_defense.name = "automatic-discharge-defense-equipment"
 auto_discharge_defense.automatic = true
+auto_discharge_defense.sprite.filename = "__automatic-discharge-defense__/graphics/automatic-discharge-defense-equipment.png"
 
 local auto_discharge_defense_item = util.table.deepcopy(data.raw.item["discharge-defense-equipment"])
 auto_discharge_defense_item.name = "automatic-discharge-defense-equipment"
@@ -20,7 +21,7 @@ local auto_discharge_defense_recipe = {
     {
         { type = "item", name = "advanced-circuit",            amount = 2 },
         { type = "item", name = "discharge-defense-equipment", amount = 1 },
-        { type = "item", name = "discharge-defense-remote",    amount = 1 }
+        { type = "item", name = "raw-fish",                    amount = 1 }
     },
     results =
     {
@@ -32,7 +33,15 @@ local tech_effect = {
     type = "unlock-recipe",
     recipe = "automatic-discharge-defense-equipment"
 }
-table.insert(data.raw.technology["discharge-defense-equipment"].effects, tech_effect)
+for _, technology in pairs(data.raw["technology"]) do
+    if technology.effects then
+        for _, effect in pairs(technology.effects) do
+            if effect.type == "unlock-recipe" and effect.recipe == "discharge-defense-equipment" then
+                table.insert(technology.effects, tech_effect)
+            end
+        end
+    end
+end
 
 data:extend({
     auto_discharge_defense,
