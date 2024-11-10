@@ -32,7 +32,15 @@ local tech_effect = {
     type = "unlock-recipe",
     recipe = "automatic-discharge-defense-equipment"
 }
-table.insert(data.raw.technology["discharge-defense-equipment"].effects, tech_effect)
+for _, technology in pairs(data.raw["technology"]) do
+    if technology.effects then
+        for _, effect in pairs(technology.effects) do
+            if effect.type == "unlock-recipe" and effect.recipe == "discharge-defense-equipment" then
+                table.insert(technology.effects, tech_effect)
+            end
+        end
+    end
+end
 
 data:extend({
     auto_discharge_defense,
