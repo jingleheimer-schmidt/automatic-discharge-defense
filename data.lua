@@ -21,7 +21,7 @@ local auto_discharge_defense_recipe = {
     {
         { type = "item", name = "advanced-circuit",            amount = 2 },
         { type = "item", name = "discharge-defense-equipment", amount = 1 },
-        { type = "item", name = "discharge-defense-remote",    amount = 1 }
+        { type = "item", name = "raw-fish",                    amount = 1 }
     },
     results =
     {

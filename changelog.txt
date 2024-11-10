@@ -2,6 +2,7 @@
 Version: 0.0.6
 Date: ????
   Changes:
+    - replaced the remote with a raw fish in the recipe
     - automatic discharge defense can be unlocked by any technology that unlocks discharge defense
     - updated the equipment sprite
 ---------------------------------------------------------------------------------------------------
