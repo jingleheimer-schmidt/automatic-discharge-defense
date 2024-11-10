@@ -4,6 +4,7 @@ require("util")
 local auto_discharge_defense = util.table.deepcopy(data.raw["active-defense-equipment"]["discharge-defense-equipment"])
 auto_discharge_defense.name = "automatic-discharge-defense-equipment"
 auto_discharge_defense.automatic = true
+auto_discharge_defense.sprite.filename = "__automatic-discharge-defense__/graphics/automatic-discharge-defense-equipment.png"
 
 local auto_discharge_defense_item = util.table.deepcopy(data.raw.item["discharge-defense-equipment"])
 auto_discharge_defense_item.name = "automatic-discharge-defense-equipment"
