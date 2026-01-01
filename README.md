@@ -1,5 +1,5 @@
 # Overview
-This mod adds a discharge defense equipment that automatically triggers when enemies are nearby. It can be crafted by combining a standard discharge defense with a remote and an advanced circuit.
+This mod adds a discharge defense equipment that automatically triggers when enemies are nearby. It can be crafted by combining a standard discharge defense with an advanced circuit and raw fish.
 
 ---------------------
 # Translation
