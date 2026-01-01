@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.7
+Date: ????
+  Changes:
+    - updated readme
+    - removed .psd files from distribution
+  Locale:
+    - updated locale from Crowdin
+---------------------------------------------------------------------------------------------------
 Version: 0.0.6
 Date: 09NOV2024
   Changes:

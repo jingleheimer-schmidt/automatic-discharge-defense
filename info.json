@@ -1,11 +1,21 @@
+
 {
-  "name": "automatic-discharge-defense",
-  "version": "0.0.6",
-  "title": "Automatic Discharge Defense",
-  "author": "asher_sky",
-  "contact": "",
-  "homepage": "",
-  "description": "Upgrade your Discharge Defense equipment with an Automatic Activation System",
-  "factorio_version": "2.0",
-  "dependencies": ["base"]
+    "name": "automatic-discharge-defense",
+    "version": "0.0.7",
+    "title": "Automatic Discharge Defense",
+    "author": "asher_sky",
+    "contact": "",
+    "homepage": "",
+    "description": "Upgrade your Discharge Defense equipment with an Automatic Activation System",
+    "factorio_version": "2.0",
+    "dependencies": [
+        "base"
+    ],
+    "package": {
+        "ignore": [
+            "**/*.psd"
+        ],
+        "sync_portal_details": true,
+        "readme": "README.md"
+    }
 }
