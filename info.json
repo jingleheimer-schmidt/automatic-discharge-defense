@@ -16,6 +16,6 @@
             "**/*.psd"
         ],
         "sync_portal_details": true,
-        "readme": "readme.md"
+        "readme": "README.md"
     }
 }
